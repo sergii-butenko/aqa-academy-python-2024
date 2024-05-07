@@ -1,0 +1,11 @@
+[flake8]
+exclude =
+    __pycache__
+    .pytest_cache
+    env
+    .env
+    ./env
+    env/
+    .env/
+    .venv
+    venv

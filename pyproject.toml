@@ -1,0 +1,15 @@
+[tool.isort]
+py_version=311
+skip = [".gitignore", ".venv/"]
+
+[tool.black]
+force-exclude = '''
+/(
+\.git
+| \.mypy_cache
+| \.venv
+| _build
+| build
+| dist
+)/
+'''
