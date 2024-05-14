@@ -1,6 +1,7 @@
 # major libs
 pytest==8.2.0
 pytest-html==4.1.1
+selenium==4.20.0
 
 #helpers
 
