@@ -31,7 +31,7 @@ def test_negative_login():
     chromeBrowser.close()
 
 
-def test_negative_login_updated(GitHubUI):
+def test_negative_login_updated(git_hub_ui_app):
     """ Summary: Test negative login attemp
     Steps:
     1. Navigate to login page
@@ -41,16 +41,11 @@ def test_negative_login_updated(GitHubUI):
     Expected result
     Error saying BLA appeared
     """
-    #1. Navigate to login page
-    GitHubUI.open() # webdriver method - BAD
-    
-    GitHubUI.login_page.navigate_to()
+    #1 Navigate to login page
+    git_hub_ui_app.login_page.navigate_to()
     
     #2. Enter wrong creds
-    GitHubUI.try_login(username='ksdnkjfnd', password='ksdnkjfnd')
+    git_hub_ui_app.try_login(username='ksdnkjfnd', password='ksdnkjfnd')
 
     # Expected result
-    assert GitHubUI.login_page.check_wrong_creds_message()
-
-    # CleanUP
-    GitHubUI.close() # webdriver method - BAD
+    assert git_hub_ui_app.login_page.check_wrong_creds_message()
