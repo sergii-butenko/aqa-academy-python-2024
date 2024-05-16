@@ -2,6 +2,7 @@
 pytest==8.2.0
 pytest-html==4.1.1
 selenium==4.20.0
+requests==2.31.0
 
 #helpers
 

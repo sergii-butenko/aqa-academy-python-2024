@@ -1,5 +1,5 @@
 from src.applications.ui.pages.login_page import LoginPage
-from src.applications.ui.pages.signup_page import SignUpPage
+# from src.applications.ui.pages.signup_page import SignUpPage
 from src.applications.ui.base_app import BaseApp
 
 
